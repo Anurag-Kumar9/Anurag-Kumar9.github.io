@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="description">A form to collect information about the user</p>
+    </header>
+    <main>
+        <form id="survey-form" action="/dummy">
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" required name="name" placeholder="Enter Your Name" />
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="email" required name="email" placeholder="Enter Your Email Address" />
+            </label>
+            <label for="number" id="number-label">Age
+                <input id="number" type="number" min="13" max="120" placeholder="Enter Age">
+            </label>
+            <hr>
+            <label for="dropdown">Choose the role that best describes you
+                <select id="dropdown">
+                    <option disabled selected>Choose a option</option>
+                    <option>Student</option>
+                    <option>Employee</option>
+                </select>
+            </label>
+            <hr>
+            <p>Would you recoommend our courses to your freinds</p>
+            <label for="radio1">
+                <input type="radio" name="radio" value="yes" id="radio1" checked />YES
+            </label>
+            <label for="radio2">
+                <input type="radio" name="radio" value="no" id="radio2" />NOPE
+            </label>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="video">
+                <input type="checkbox" value="video" id="video" name="improve">Video Lectures
+            </label>
+            <label for="notes">
+                <input type="checkbox" value="notes" id="notes" name="improve">Notes Provided
+            </label>
+            <label for="comment">Any Additional Comment or Suggestion
+                <textarea id="comment" name="comment" placeholder="Comments or Suggestion" rows="3"
+                    cols="52"></textarea>
+            </label>
+            <hr>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+</body>
+
+</html>
