@@ -1,3 +1,14 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.container-fluid{
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .navbar {
     background-color: #BE3144;
 }
@@ -8,6 +19,11 @@
     align-items: center;
     padding: 0 20px;
     font-size: 1.2em;
+}
+
+.navbar-brand {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
 }
 
 #welcome-section {
@@ -21,6 +37,24 @@
     width: 100%;
     height: 100vh;
     border-bottom: thick double #000;
+    font-size: 1.2em;
+    font-family: Raleway;
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+}
+
+#about{
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: auto;
+    border-bottom: thick double #000;
+
 }
 
 #project {
@@ -32,6 +66,11 @@
     border-bottom: thick double #000;
 }
 
+.project-header{
+    margin: 20px;
+    font-family: "Playfair Display", sans-serif;
+}
+
 figcaption {
     background-color: #222;
     color: #fff;
@@ -40,6 +79,7 @@ figcaption {
     padding-bottom: 0;
     text-align: center;
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .view {
@@ -55,12 +95,11 @@ figcaption {
     text-align: center;
     padding: 10px 0;
     font-size: 1.5em;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction:column;
-    justify-content: space-around;
-    align-items: space-between;
-    height: 30vh;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -76,7 +115,7 @@ figcaption {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 80%;
 }
 
 .profile-image{
@@ -87,8 +126,28 @@ figcaption {
     display: block;
 }
 
-#projects img {
+.project-image {
     max-width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.contact-header{
+    /* font-size: 1.5em; */
+    margin: 10px;
+    margin-top: 2px;
+}
+
+#about {
+    font-family: "Playfair Display", sans-serif;
+}
+
+#about p {
+    font-family: "Montserrat", sans-serif;
 }
